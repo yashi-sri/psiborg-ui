@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.login-container {
+  /* border: 5px solid red; */
+  /* background-color: pink; */
+  background-image: url(https://www.bigbasketco.com/wp-content/uploads/Good-l-corp-how-to-color-match-new-carts-with-old-1024x682.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* object-fit: contain; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* border: 3px /solid green; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+.logo {
+  height: 100%;
+  width: 70px;
+  /* border: 3px solid red; */
+}
+.logo img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  cursor: pointer;
+}
+.login-container form {
+  /* border: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 3rem 0;
+}
+.form-input {
+  /* border: 1px solid red; */
+  width: 60%;
+  height: 55px;
+}
+.form-input .input-field {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.remember-me {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.login-btn {
+  /* border: 1px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-btn button {
+  width: 50%;
+  height: 100%;
+  background-color: tomato;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.login-btn button:focus,
+.login-btn button:hover {
+  background-color: #cf1b1b;
+}
+
+@media screen and (max-width: 1020px) {
+  .login-container form {
+    width: 70%;
+  }
+  .form-input {
+    /* border: 1px solid red; */
+    width: 70%;
+    /* height: 55px; */
+  }
+}
+@media screen and (max-width: 750px) {
+  .login-container form {
+    width: 80%;
+  }
+  .form-input {
+    /* border: 1px solid red; */
+    width: 75%;
+    /* height: 55px; */
+  }
+}
+@media screen and (max-width: 550px) {
+  .login-container form {
+    width: 95%;
+  }
+  .form-input {
+    /* border: 1px solid red; */
+    width: 90%;
+    /* height: 55px; */
+  }
+  .login-btn button {
+    width: 80%;
+  }
+}

@@ -1,0 +1,19 @@
+.search-parent {
+  position: fixed;
+  /* border: 2px solid red; */
+  width: 100%;
+  top: 60px;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.search-parent input {
+  width: 80%;
+  padding-left: 6%;
+  height: 30px;
+}
+.fa-search {
+  position: absolute;
+  top: 25%;
+  left: 12%;
+}
