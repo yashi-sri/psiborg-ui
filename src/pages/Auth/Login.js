@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 import "./Login.css";
+import Logo from "../../image/logo.png";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -26,6 +27,9 @@ const Login = () => {
   return (
     <>
       <div className="login-container">
+        <div className="login-header-logo">
+          <img src={Logo} />
+        </div>
         <form onSubmit={loginHandler}>
           <div className="form-input">
             <input
