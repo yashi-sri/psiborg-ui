@@ -18,27 +18,15 @@
   align-items: center;
   position: relative;
 }
-nav {
-  position: absolute;
+.login-header-logo {
+  /* border: 1px solid red; */
+  position: fixed;
   top: 0;
-  left: 0;
-  /* border: 3px /solid green; */
-  width: 100%;
+  right: 10px;
   height: 70px;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 1rem;
 }
-.logo {
+.login-header-logo img {
   height: 100%;
-  width: 70px;
-  /* border: 3px solid red; */
-}
-.logo img {
-  height: 100%;
-  width: 100%;
-  object-fit: contain;
-  cursor: pointer;
 }
 .login-container form {
   /* border: 1px solid black; */
